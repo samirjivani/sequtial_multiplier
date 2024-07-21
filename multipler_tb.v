@@ -56,7 +56,7 @@ begin
   repeat (26) #5 clock = ~clock;
 end
 
-// Display results and compare with Table 8.5
+
 always @(posedge clock)
   $strobe("C=%b A=%b Q=%b P=%b time=%0d", M0.C, M0.A, M0.Q, M0.P, $time);
 endmodule
